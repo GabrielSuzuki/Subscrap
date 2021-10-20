@@ -54,7 +54,7 @@ ROOT_URLCONF = 'subscription_app_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Subscrap/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
