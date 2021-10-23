@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "crispy_forms",
+    'Subscrap.apps.SubscrapConfig',
+    'register.apps.RegisterConfig',
 ]
 
 MIDDLEWARE = [
@@ -122,8 +125,12 @@ STATIC_URL = '/static/'
 
 #STATIC_ROOT = f"{BASE_DIR}/Subscrap/static/"
 
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+LOGIN_REDIRECT_URL = "/"
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'Subscrap/static/'),
+    os.path.join(BASE_DIR, 'Subscrap/static/'),
 ]
 
 # Default primary key field type
